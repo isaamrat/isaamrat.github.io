@@ -16,12 +16,11 @@
     <script src="js/dateAndTime.js"></script>
     <script src="js/windowsHandler.js"></script>
     <script type="text/javascript" src="js/redirection-mobile.js"></script>
-    <script type="text/javascript">// <![CDATA[
-        SA.redirection_mobile({
-            mobile_url: "urltoredirectto.com",
-        });
-
-    // ]]></script>
+    <script>
+        if (document.documentElement.clientWidth < 850) {
+            window.location = "/mobile.html";
+        }
+    </script>
     <title>Md. Khaliduzzaman Khan Samrat</title>
 </head>
 
