@@ -6,7 +6,7 @@
 body {
     background-image: url("../assets/macos.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .box {
