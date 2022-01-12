@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../assets/macos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 10px 10px rgba(34, 34, 34, 0.39);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 1s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.container2 {
+    width: 55%;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(107, 107, 107, 0.514);
+    transition: 2s;
+}
+
+.container2:hover {
+    transform: scale(1.4);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+}
+
+.iconContainer {
+    color: transparent;
+    text-align: center;
+    font-size: x-small;
+    transition: 1s;
+}
+
+.iconContainer:hover {
+    transform: scale(1.5);
+    color: white;
+}
+
+#schoolSection {
+    transition: 1s;
+}
+
+#schoolSection:hover {
+    transform: scale(1.2);
+}
+
+#dock {
+    transition: 0.5s;
+}
+
+#dock:hover {
+    transform: scale(1.1);
+}
+
+#education {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+#achievementWindow{
+    display: none;
+}
+#passionWindow{
+    display: none;
+}
+#skillWindow{
+    display: none;
+}
+#aboutWindow{
+    display: none;
+}
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+
+#main-frame {
+    overflow: hidden;
+    transition: 1s;
+}
+
+#slideImage {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#slideImage2 {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#slideImage3 {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#achievementImage {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.skill-bar {
+    height: 14px;
+    background: grey;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background-image: linear-gradient(45deg, #4005b5, #733dc9, #7e1dd3);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    color: black;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
